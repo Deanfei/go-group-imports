@@ -57,9 +57,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/beerose/go-group-imports-vscode.git"
+    "url": "https://github.com/Deanfei/go-group-imports"
   },
-  "homepage": "https://github.com/beerose/go-group-imports-vscode/blob/master/README.md",
+  "homepage": "https://github.com/Deanfei/go-group-imports",
   "dependencies": {
     "@types/mocha": "^5.2.5",
     "mocha": "^5.2.0"
