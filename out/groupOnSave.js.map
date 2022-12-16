@@ -1,0 +1,1 @@
+{"version":3,"file":"groupOnSave.js","sourceRoot":"","sources":["../src/groupOnSave.ts"],"names":[],"mappings":";;;AAAA,mCAAgC;AAChC,mCAAyC;AAElC,MAAM,kBAAkB,GAAG,GAAG,EAAE;IACrC,IAAI,CAAC,eAAM,CAAC,gBAAgB,CAAC,QAAQ,CAAC,UAAU,CAAC,QAAQ,CAAC,IAAI,CAAC,EAAE;QAC/D,OAAO;KACR;IACD,OAAO,IAAA,sBAAc,GAAE,CAAC;AAC1B,CAAC,CAAC;AALW,QAAA,kBAAkB,sBAK7B"}

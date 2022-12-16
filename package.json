@@ -1,0 +1,67 @@
+{
+  "name": "golang-group-imports",
+  "displayName": "Golang Group Imports",
+  "description": "VSCode extension for separating imports in go files into three groups: stdlib, 3rdparty, own.",
+  "version": "1.0.0",
+  "publisher": "colton1989",
+  "icon": "assets/logo.png",
+  "galleryBanner": {
+    "color": "#FFE779",
+    "theme": "light"
+  },
+  "engines": {
+    "vscode": "^1.20.0"
+  },
+  "keywords": [
+    "go",
+    "imports",
+    "group"
+  ],
+  "categories": [
+    "Formatters"
+  ],
+  "activationEvents": [
+    "onLanguage:go",
+    "onCommand:extension.goGroupImports"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.goGroupImports",
+        "title": "Group imports"
+      }
+    ],
+    "configuration": {
+      "title": "Group Imports configuration",
+      "properties": {
+        "groupImports.onSave": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically group imports on save."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.43",
+    "typescript": "^3.1.2",
+    "vscode": "^1.1.21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beerose/go-group-imports-vscode.git"
+  },
+  "homepage": "https://github.com/beerose/go-group-imports-vscode/blob/master/README.md",
+  "dependencies": {
+    "@types/mocha": "^5.2.5",
+    "mocha": "^5.2.0"
+  }
+}
