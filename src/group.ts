@@ -50,7 +50,10 @@ const isStdlibImport = (imp: string): boolean => {
 
 const isOwnImport = (imp: string, root: string): boolean => {
   const goPrivate = workspace.getConfiguration('groupImports').get('GoPrivate') as string;
-  return imp.includes(root) || imp.includes(goPrivate);
+  if (goPrivate) {
+    return imp.includes(root) || imp.includes(goPrivate);
+  }
+  return imp.includes(root);
 };
 
 export const group = (imports: string[], rootPkg: string): ImportGroups => {
