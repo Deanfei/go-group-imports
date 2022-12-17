@@ -2,7 +2,7 @@
   "name": "golang-group-imports",
   "displayName": "Golang Group Imports",
   "description": "VSCode extension for separating imports in go files into three groups: stdlib, 3rdparty, own.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "colton1989",
   "icon": "assets/logo.png",
   "galleryBanner": {
@@ -39,6 +39,11 @@
           "type": "boolean",
           "default": true,
           "description": "Automatically group imports on save."
+        },
+        "groupImports.GoPrivate": {
+          "type": "string",
+          "default": "",
+          "description": "The go private packages are assumed to be own"
         }
       }
     }

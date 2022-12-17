@@ -8,3 +8,4 @@ VSCode extension for separating imports in Go files into three groups:
 ## Extension Settings
 
 * `groupImports.onSave`: automatically group imports on save. Default value is `true`.
+* `groupImports.GoPrivate`: the private packages that will also be included as own packages, eg: "github.com/your-compony/"
